@@ -1,0 +1,16 @@
+﻿<Window x:Class="AplicacionLibro.DialogoLibro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AplicacionLibro"
+        mc:Ignorable="d"
+        Title="DialogoLibro" Height="450" Width="381">
+    <Grid>
+        <TextBox x:Name="textoTitulo" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="wrap" Height="40" Width="158" Margin="0,70,0,0" RenderTransformOrigin="1.06,0.579" Text="{Binding Path=Titulo}"></TextBox>
+        <TextBox x:Name="textoAutor" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="wrap" Height="40" Width="158" RenderTransformOrigin="1.06,0.579" Margin="0,154,0,0" Text="{Binding Path=Autor}"/>
+        <DatePicker x:Name="cogerFecha" SelectedDate="{Binding Path=FechEntrada}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="158" Margin="0,234,0,0"></DatePicker>
+        <Button x:Name="bAceptar" Content="Aceptar" HorizontalAlignment="Left" Height="33" Margin="71,311,0,90" Width="98" RenderTransformOrigin="0.31,0.431" Click="aceptar"></Button>
+        <Button x:Name="bCancelar" Content="Aceptar" HorizontalAlignment="Right" Height="33" Margin="0,311,71,90" Width="98" RenderTransformOrigin="0.104,0.381" Click="cancelar"/>
+    </Grid>
+</Window>

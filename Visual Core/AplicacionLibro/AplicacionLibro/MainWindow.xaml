@@ -1,0 +1,18 @@
+﻿<Window x:Class="AplicacionLibro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AplicacionLibro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataLibros" ItemsSource="{Binding Path=listaLibros}" HorizontalAlignment="left"  Height="295" Margin="86, 52,0,0" VerticalAlignment="Top" Width="664" >
+           <Menu Margin="0, 0, 0, 411">
+            <MenuItem x:Name="menuArchivo" Header="Archivo" >
+                    <MenuItem x:Name="NuevoMenuItem" Header="Nuevo.." Click="nuevoMenuItem"/>
+                </MenuItem>
+            </Menu>
+        </DataGrid>
+    </Grid>
+</Window>

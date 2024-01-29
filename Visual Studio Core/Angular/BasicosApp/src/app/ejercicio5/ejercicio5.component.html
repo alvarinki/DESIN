@@ -1,0 +1,7 @@
+<input type="text" #nombre placeholder="Insertar nombre">
+<button id="botonInsertar"  (click)="anadirNombre(nombre.value)">Insertar</button>
+<button id="botonBorrar" (click)="eliminarNombre(nombre.value)">Borrar</button>
+
+<ul>
+    <li *ngFor="let nombre of entradas">{{nombre}}</li> 
+</ul>

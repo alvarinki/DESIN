@@ -1,0 +1,9 @@
+<div>
+    <p>Ancho</p>
+    <input type="range" [(ngModel)]="ancho" max="500" min="50" value="100"/>
+    <p>alto</p>
+    <input type="range" [(ngModel)]="alto" max="500" min="50" value="100"/>
+    
+    <img src="http://placekitten.com/{{ancho}}/{{alto}}">
+</div>
+
